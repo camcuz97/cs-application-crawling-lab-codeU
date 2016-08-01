@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Camerons-MacBook-Pro.local" name="com.flatironschool.javacs.WikiCrawlerTest" skipped="0" tests="1" time="2.943" timestamp="2016-08-01T06:38:53">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="env.XPC_SERVICE_NAME" value="0" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="env._system_arch" value="x86_64" />
+    <property name="env.GEM_HOME" value="/Users/Cameron/.rvm/gems/ruby-2.3.0" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/classes" />
+    <property name="env.TMPDIR" value="/var/folders/xw/vxl0c5rs5xj0k05sts904mnr0000gp/T/" />
+    <property name="env.PWD" value="/Users/Cameron/Desktop/CodeU/cs-application-crawling-lab-codeU" />
+    <property name="env.LANG" value="en_US.UTF-8" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="/usr/local/Cellar/ant/1.9.6/libexec" />
+    <property name="java.runtime.version" value="1.8.0_74-b02" />
+    <property name="env.MY_RUBY_HOME" value="/Users/Cameron/.rvm/rubies/ruby-2.3.0" />
+    <property name="env.Apple_PubSub_Socket_Render" value="/private/tmp/com.apple.launchd.oply1ngNPJ/Render" />
+    <property name="env.DISPLAY" value="/private/tmp/com.apple.launchd.m0F353k5Di/org.macosforge.xquartz:0" />
+    <property name="env.rvm_version" value="1.26.11 (latest)" />
+    <property name="user.name" value="Cameron" />
+    <property name="env.USER" value="Cameron" />
+    <property name="env.SHELL" value="/bin/bash" />
+    <property name="env.__CF_USER_TEXT_ENCODING" value="0x1F6:0x0:0x0" />
+    <property name="env.__fish_bin_dir" value="/usr/local/Cellar/fish/2.2.0/bin" />
+    <property name="env._system_type" value="Darwin" />
+    <property name="env.PATH" value="/Users/Cameron/.rvm/gems/ruby-2.3.0/bin:/Users/Cameron/.rvm/gems/ruby-2.3.0@global/bin:/Users/Cameron/.rvm/rubies/ruby-2.3.0/bin:/Library/Frameworks/Python.framework/Versions/2.7/bin:/Users/Cameron/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin" />
+    <property name="user.language" value="en" />
+    <property name="env.rvm_prefix" value="/Users/Cameron" />
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib" />
+    <property name="ant.project.default-target" value="build" />
+    <property name="env.XPC_FLAGS" value="0x0" />
+    <property name="ant.project.name" value="JavaCS" />
+    <property name="env.rvm_path" value="/Users/Cameron/.rvm" />
+    <property name="env.RUBY_VERSION" value="ruby-2.3.0" />
+    <property name="java.version" value="1.8.0_74" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="env._system_name" value="OSX" />
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="env.rvm_bin_path" value="/Users/Cameron/.rvm/bin" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="env.SHLVL" value="4" />
+    <property name="file.separator" value="/" />
+    <property name="env._system_version" value="10.11" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="52.0" />
+    <property name="user.country" value="US" />
+    <property name="ant.file.JavaCS" value="/Users/Cameron/Desktop/CodeU/cs-application-crawling-lab-codeU/javacs-lab11/build.xml" />
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="env.LOGNAME" value="Cameron" />
+    <property name="ant.file" value="/Users/Cameron/Desktop/CodeU/cs-application-crawling-lab-codeU/javacs-lab11/build.xml" />
+    <property name="os.version" value="10.11.5" />
+    <property name="env.TERM_PROGRAM_VERSION" value="361.1" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="25.74-b02" />
+    <property name="ant.library.dir" value="/usr/local/Cellar/ant/1.9.6/libexec/lib" />
+    <property name="env.__fish_help_dir" value="/usr/local/Cellar/fish/2.2.0/share/doc/fish" />
+    <property name="junit.output.dir" value="junit" />
+    <property name="env.IRBRC" value="/Users/Cameron/.rvm/rubies/ruby-2.3.0/.irbrc" />
+    <property name="env.__fish_datadir" value="/usr/local/Cellar/fish/2.2.0/share/fish" />
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob" />
+    <property name="env.TERM" value="xterm-256color" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="env.GEM_PATH" value="/Users/Cameron/.rvm/gems/ruby-2.3.0:/Users/Cameron/.rvm/gems/ruby-2.3.0@global" />
+    <property name="target" value="1.7" />
+    <property name="user.home" value="/Users/Cameron" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="env.TERM_PROGRAM" value="Apple_Terminal" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.library.path" value="/Users/Cameron/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+    <property name="gopherProxySet" value="false" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="env.__fish_sysconfdir" value="/usr/local/Cellar/fish/2.2.0/etc/fish" />
+    <property name="java.class.path" value="/Users/Cameron/Desktop/CodeU/cs-application-crawling-lab-codeU/javacs-lab11/bin:/Users/Cameron/Desktop/CodeU/cs-application-crawling-lab-codeU/javacs-lab11/lib/jedis-2.8.0.jar:/Users/Cameron/Desktop/CodeU/cs-application-crawling-lab-codeU/javacs-lab11/lib/jsoup-1.8.3.jar:/Users/Cameron/Desktop/CodeU/cs-application-crawling-lab-codeU/javacs-lab11/lib/junit-4.12.jar:/Users/Cameron/Desktop/CodeU/cs-application-crawling-lab-codeU/javacs-lab11/lib/hamcrest-core-1.3.jar:/Users/Cameron/Desktop/CodeU/cs-application-crawling-lab-codeU/javacs-lab11/lib/hamcrest-library-1.3.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-launcher.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-junit.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-junit4.jar" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.flatironschool.javacs.WikiCrawlerTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/Cameron/Desktop/CodeU/cs-application-crawling-lab-codeU/javacs-lab11/junit/TEST-com.flatironschool.javacs.WikiCrawlerTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/Users/Cameron/Desktop/CodeU/cs-application-crawling-lab-codeU/javacs-lab11/junitvmwatcher3212823990163587117.properties propsfile=/Users/Cameron/Desktop/CodeU/cs-application-crawling-lab-codeU/javacs-lab11/junit5121962785910534299.properties" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
+    <property name="env.TERM_SESSION_ID" value="729676CF-5580-4348-A8DF-E0DBFBBF7FF8" />
+    <property name="ant.file.type.JavaCS" value="file" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.8" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="env.HOME" value="/Users/Cameron" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="env.JAVA_MAIN_CLASS_3105" value="org.apache.tools.ant.launch.Launcher" />
+    <property name="java.io.tmpdir" value="/var/folders/xw/vxl0c5rs5xj0k05sts904mnr0000gp/T/" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="env.SSH_AUTH_SOCK" value="/private/tmp/com.apple.launchd.sLFu1LgBxY/Listeners" />
+    <property name="os.arch" value="x86_64" />
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
+    <property name="java.ext.dirs" value="/Users/Cameron/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="user.dir" value="/Users/Cameron/Desktop/CodeU/cs-application-crawling-lab-codeU" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="basedir" value="/Users/Cameron/Desktop/CodeU/cs-application-crawling-lab-codeU/javacs-lab11" />
+    <property name="ant.java.version" value="1.8" />
+    <property name="ant.core.lib" value="/usr/local/Cellar/ant/1.9.6/libexec/lib/ant.jar" />
+    <property name="source" value="1.7" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="java.specification.version" value="1.8" />
+    <property name="ant.project.invoked-targets" value="test" />
+  </properties>
+  <testcase classname="com.flatironschool.javacs.WikiCrawlerTest" name="testCrawl" time="2.892" />
+  <system-out><![CDATA[https://en.wikipedia.org/wiki/Programming_language
+https://en.wikipedia.org/wiki/Concurrent_computing
+https://en.wikipedia.org/wiki/Class-based_programming
+https://en.wikipedia.org/wiki/Object-oriented_programming
+https://en.wikipedia.org/wiki/Write_once,_run_anywhere
+https://en.wikipedia.org/wiki/Compiler
+https://en.wikipedia.org/wiki/Java_bytecode
+https://en.wikipedia.org/wiki/Java_virtual_machine
+https://en.wikipedia.org/wiki/Computer_architecture
+https://en.wikipedia.org/wiki/Measuring_programming_language_popularity
+https://en.wikipedia.org/wiki/Wikipedia:Citation_needed
+https://en.wikipedia.org/wiki/James_Gosling
+https://en.wikipedia.org/wiki/Sun_Microsystems
+https://en.wikipedia.org/wiki/Sun_acquisition_by_Oracle
+https://en.wikipedia.org/wiki/Java_(software_platform)
+https://en.wikipedia.org/wiki/Syntax_(programming_languages)
+https://en.wikipedia.org/wiki/C_(programming_language)
+https://en.wikipedia.org/wiki/C%2B%2B
+https://en.wikipedia.org/wiki/Low-level_programming_language
+https://en.wikipedia.org/wiki/Reference_implementation
+https://en.wikipedia.org/wiki/Compiler
+https://en.wikipedia.org/wiki/Library_(computing)
+https://en.wikipedia.org/wiki/Java_Community_Process
+https://en.wikipedia.org/wiki/GNU_General_Public_License
+https://en.wikipedia.org/wiki/GNU_Compiler_for_Java
+https://en.wikipedia.org/wiki/GNU_Classpath
+https://en.wikipedia.org/wiki/IcedTea
+https://en.wikipedia.org/wiki/James_Gosling
+https://en.wikipedia.org/wiki/Patrick_Naughton
+https://en.wikipedia.org/wiki/Oak_(programming_language)
+https://en.wikipedia.org/wiki/Oak
+https://en.wikipedia.org/wiki/Java_coffee
+https://en.wikipedia.org/wiki/Sun_Microsystems
+https://en.wikipedia.org/wiki/Computing_platform
+https://en.wikipedia.org/wiki/Web_browser
+https://en.wikipedia.org/wiki/Java_applet
+https://en.wikipedia.org/wiki/Bootstrapping_(compilers)
+https://en.wikipedia.org/wiki/Arthur_van_Hoff
+https://en.wikipedia.org/wiki/Java_Platform,_Enterprise_Edition
+https://en.wikipedia.org/wiki/Java_Platform,_Micro_Edition
+https://en.wikipedia.org/wiki/Java_Platform,_Standard_Edition
+https://en.wikipedia.org/wiki/ISO/IEC_JTC_1
+https://en.wikipedia.org/wiki/Ecma_International
+https://en.wikipedia.org/wiki/De_facto_standard
+https://en.wikipedia.org/wiki/Java_Community_Process
+https://en.wikipedia.org/wiki/Proprietary_software
+https://en.wikipedia.org/wiki/Free_and_open-source_software
+https://en.wikipedia.org/wiki/GNU_General_Public_License
+https://en.wikipedia.org/wiki/Free_software
+https://en.wikipedia.org/wiki/Oracle_Corporation
+https://en.wikipedia.org/wiki/Laptop
+https://en.wikipedia.org/wiki/Data_center
+https://en.wikipedia.org/wiki/Video_game_console
+https://en.wikipedia.org/wiki/Supercomputer
+https://en.wikipedia.org/wiki/Java_bytecode
+https://en.wikipedia.org/wiki/Machine_code
+https://en.wikipedia.org/wiki/Virtual_machine
+https://en.wikipedia.org/wiki/End_user
+https://en.wikipedia.org/wiki/Java_virtual_machine
+https://en.wikipedia.org/wiki/Applet
+https://en.wikipedia.org/wiki/Thread_(computing)
+https://en.wikipedia.org/wiki/Computer_network
+https://en.wikipedia.org/wiki/Executable
+https://en.wikipedia.org/wiki/Just-in-time_compilation
+https://en.wikipedia.org/wiki/Java_virtual_machine
+https://en.wikipedia.org/wiki/Java_bytecode
+https://en.wikipedia.org/wiki/Oracle_Corporation
+https://en.wikipedia.org/wiki/Sun_Microsystems
+https://en.wikipedia.org/wiki/Microsoft_Windows
+https://en.wikipedia.org/wiki/OS_X
+https://en.wikipedia.org/wiki/Linux
+https://en.wikipedia.org/wiki/Solaris_(operating_system)
+https://en.wikipedia.org/wiki/Ecma_International
+https://en.wikipedia.org/wiki/De_facto_standard
+https://en.wikipedia.org/wiki/Java_Development_Kit
+https://en.wikipedia.org/wiki/Java_compiler
+https://en.wikipedia.org/wiki/Javadoc
+https://en.wikipedia.org/wiki/JAR_(file_format)
+https://en.wikipedia.org/wiki/Debugger
+https://en.wikipedia.org/wiki/OpenJDK
+https://en.wikipedia.org/wiki/Microsoft
+https://en.wikipedia.org/wiki/Java_remote_method_invocation
+https://en.wikipedia.org/wiki/Java_Native_Interface
+https://en.wikipedia.org/wiki/Microsoft_Windows
+https://en.wikipedia.org/wiki/Java_Platform,_Enterprise_Edition
+https://en.wikipedia.org/wiki/Just-in-time_compilation
+https://en.wikipedia.org/wiki/Java_version_history
+https://en.wikipedia.org/wiki/HotSpot
+https://en.wikipedia.org/wiki/ARM_architecture
+https://en.wikipedia.org/wiki/Jazelle
+https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)
+https://en.wikipedia.org/wiki/Object_lifetime
+https://en.wikipedia.org/wiki/Unreachable_memory
+https://en.wikipedia.org/wiki/Memory_leak
+https://en.wikipedia.org/wiki/Stack_(abstract_data_type)
+https://en.wikipedia.org/wiki/Memory_management#DYNAMIC
+https://en.wikipedia.org/wiki/Memory_leak
+https://en.wikipedia.org/wiki/Smart_pointer
+https://en.wikipedia.org/wiki/Pointer_(computer_programming)
+https://en.wikipedia.org/wiki/Primitive_data_type
+https://en.wikipedia.org/wiki/Stack-based_memory_allocation
+https://en.wikipedia.org/wiki/Escape_analysis
+https://en.wikipedia.org/wiki/Wikipedia:Citation_needed
+https://en.wikipedia.org/wiki/Concurrent_mark_sweep_collector
+https://en.wikipedia.org/wiki/C%2B%2B
+https://en.wikipedia.org/wiki/Boolean_data_type
+https://en.wikipedia.org/wiki/Operator_overloading
+https://en.wikipedia.org/wiki/Multiple_inheritance
+https://en.wikipedia.org/wiki/Interface_(Java)
+https://en.wikipedia.org/wiki/Anti-pattern
+https://en.wikipedia.org/wiki/Javadoc
+https://en.wikipedia.org/wiki/%22Hello,_world!%22_program
+https://en.wikipedia.org/wiki/Java_compiler
+https://en.wikipedia.org/wiki/Inner_class
+https://en.wikipedia.org/wiki/Class_(computer_programming)#Unnamed
+https://en.wikipedia.org/wiki/List_of_Java_keywords
+https://en.wikipedia.org/wiki/Method_(computer_programming)#Static_methods
+https://en.wikipedia.org/wiki/Enterprise_JavaBeans
+https://en.wikipedia.org/wiki/Array_data_type
+https://en.wikipedia.org/wiki/Variadic_function
+https://en.wikipedia.org/wiki/JAR_(file_format)
+https://en.wikipedia.org/wiki/Array_data_type
+https://en.wikipedia.org/wiki/Command-line_interface
+https://en.wikipedia.org/wiki/Standard_streams
+https://en.wikipedia.org/wiki/Java_compiler
+https://en.wikipedia.org/wiki/Source_code
+https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)#Subclasses_and_superclasses
+https://en.wikipedia.org/wiki/Object_lifetime
+https://en.wikipedia.org/wiki/Graphical_user_interface
+https://en.wikipedia.org/wiki/Event-driven_programming
+https://en.wikipedia.org/wiki/Method_overriding
+https://en.wikipedia.org/wiki/Java_annotation
+https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)#Subclasses_and_superclasses
+https://en.wikipedia.org/wiki/Pixel
+https://en.wikipedia.org/wiki/HTML
+https://en.wikipedia.org/wiki/HTML_element
+https://en.wikipedia.org/wiki/Event_dispatching_thread
+https://en.wikipedia.org/wiki/Java_Servlet
+https://en.wikipedia.org/wiki/Server-side
+https://en.wikipedia.org/wiki/HTML
+https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+https://en.wikipedia.org/wiki/Client_(computing)
+https://en.wikipedia.org/wiki/Interface_(Java)
+https://en.wikipedia.org/wiki/Server_(computing)
+https://en.wikipedia.org/wiki/Interface_(Java)
+https://en.wikipedia.org/wiki/Exception_handling
+https://en.wikipedia.org/wiki/MIME
+https://en.wikipedia.org/wiki/Server-side
+https://en.wikipedia.org/wiki/HTML
+https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+https://en.wikipedia.org/wiki/Client_(computing)
+https://en.wikipedia.org/wiki/Delimiter
+https://en.wikipedia.org/wiki/Swing_(Java)
+https://en.wikipedia.org/wiki/Library_(computing)
+https://en.wikipedia.org/wiki/Pluggable_look_and_feel
+https://en.wikipedia.org/wiki/Microsoft_Windows
+https://en.wikipedia.org/wiki/GTK%2B
+https://en.wikipedia.org/wiki/Motif_(software)
+https://en.wikipedia.org/wiki/Apple_Inc.
+https://en.wikipedia.org/wiki/Aqua_(user_interface)
+https://en.wikipedia.org/wiki/OS_X
+https://en.wikipedia.org/wiki/Graphical_control_element
+https://en.wikipedia.org/wiki/Window_(computing)
+https://en.wikipedia.org/wiki/Title_bar
+https://en.wikipedia.org/wiki/Graphical_control_element
+https://en.wikipedia.org/wiki/Constructor_(object-oriented_programming)
+https://en.wikipedia.org/wiki/Object_(computer_science)
+https://en.wikipedia.org/wiki/Event_dispatching_thread
+https://en.wikipedia.org/wiki/Generic_programming
+https://en.wikipedia.org/wiki/Type_safety
+https://en.wikipedia.org/wiki/HotSpot
+https://en.wikipedia.org/wiki/Apache_Harmony
+https://en.wikipedia.org/wiki/Smartphone
+https://en.wikipedia.org/wiki/Tablet_computer
+https://en.wikipedia.org/wiki/Google
+https://en.wikipedia.org/wiki/Android_(operating_system)
+https://en.wikipedia.org/wiki/Open_source
+https://en.wikipedia.org/wiki/Mobile_operating_system
+https://en.wikipedia.org/wiki/Linux_kernel
+https://en.wikipedia.org/wiki/Android_software_development#SDK
+https://en.wikipedia.org/wiki/Dalvik_(software)
+https://en.wikipedia.org/wiki/Android_Runtime
+https://en.wikipedia.org/wiki/William_Haskell_Alsup
+https://en.wikipedia.org/wiki/Java_Class_Library
+https://en.wikipedia.org/wiki/Standard_library
+https://en.wikipedia.org/wiki/Sun_Microsystems
+https://en.wikipedia.org/wiki/Java_Community_Process
+https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Dates_and_numbers#Chronological_items
+https://en.wikipedia.org/wiki/Sun_Microsystems
+https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Words_to_watch#Unsupported_attributions
+https://en.wikipedia.org/wiki/Application_programming_interface
+https://en.wikipedia.org/wiki/Class_(computer_programming)
+https://en.wikipedia.org/wiki/Java_package
+https://en.wikipedia.org/wiki/Interface_(Java)
+https://en.wikipedia.org/wiki/Exception_handling
+https://en.wikipedia.org/wiki/Wikipedia:TOPIC
+https://en.wikipedia.org/wiki/Talk:Java_(programming_language)#Relevant
+https://en.wikipedia.org/wiki/PersonalJava
+Indexing https://en.wikipedia.org/wiki/Java_(programming_language)
+https://en.wikipedia.org/wiki/Programming_language
+https://en.wikipedia.org/wiki/Concurrent_computing
+https://en.wikipedia.org/wiki/Class-based_programming
+https://en.wikipedia.org/wiki/Object-oriented_programming
+https://en.wikipedia.org/wiki/Write_once,_run_anywhere
+https://en.wikipedia.org/wiki/Compiler
+https://en.wikipedia.org/wiki/Java_bytecode
+https://en.wikipedia.org/wiki/Java_virtual_machine
+https://en.wikipedia.org/wiki/Computer_architecture
+https://en.wikipedia.org/wiki/Measuring_programming_language_popularity
+https://en.wikipedia.org/wiki/Wikipedia:Citation_needed
+https://en.wikipedia.org/wiki/James_Gosling
+https://en.wikipedia.org/wiki/Sun_Microsystems
+https://en.wikipedia.org/wiki/Sun_acquisition_by_Oracle
+https://en.wikipedia.org/wiki/Java_(software_platform)
+https://en.wikipedia.org/wiki/Syntax_(programming_languages)
+https://en.wikipedia.org/wiki/C_(programming_language)
+https://en.wikipedia.org/wiki/C%2B%2B
+https://en.wikipedia.org/wiki/Low-level_programming_language
+https://en.wikipedia.org/wiki/Reference_implementation
+https://en.wikipedia.org/wiki/Compiler
+https://en.wikipedia.org/wiki/Library_(computing)
+https://en.wikipedia.org/wiki/Java_Community_Process
+https://en.wikipedia.org/wiki/GNU_General_Public_License
+https://en.wikipedia.org/wiki/GNU_Compiler_for_Java
+https://en.wikipedia.org/wiki/GNU_Classpath
+https://en.wikipedia.org/wiki/IcedTea
+https://en.wikipedia.org/wiki/James_Gosling
+https://en.wikipedia.org/wiki/Patrick_Naughton
+https://en.wikipedia.org/wiki/Oak_(programming_language)
+https://en.wikipedia.org/wiki/Oak
+https://en.wikipedia.org/wiki/Java_coffee
+https://en.wikipedia.org/wiki/Sun_Microsystems
+https://en.wikipedia.org/wiki/Computing_platform
+https://en.wikipedia.org/wiki/Web_browser
+https://en.wikipedia.org/wiki/Java_applet
+https://en.wikipedia.org/wiki/Bootstrapping_(compilers)
+https://en.wikipedia.org/wiki/Arthur_van_Hoff
+https://en.wikipedia.org/wiki/Java_Platform,_Enterprise_Edition
+https://en.wikipedia.org/wiki/Java_Platform,_Micro_Edition
+https://en.wikipedia.org/wiki/Java_Platform,_Standard_Edition
+https://en.wikipedia.org/wiki/ISO/IEC_JTC_1
+https://en.wikipedia.org/wiki/Ecma_International
+https://en.wikipedia.org/wiki/De_facto_standard
+https://en.wikipedia.org/wiki/Java_Community_Process
+https://en.wikipedia.org/wiki/Proprietary_software
+https://en.wikipedia.org/wiki/Free_and_open-source_software
+https://en.wikipedia.org/wiki/GNU_General_Public_License
+https://en.wikipedia.org/wiki/Free_software
+https://en.wikipedia.org/wiki/Oracle_Corporation
+https://en.wikipedia.org/wiki/Laptop
+https://en.wikipedia.org/wiki/Data_center
+https://en.wikipedia.org/wiki/Video_game_console
+https://en.wikipedia.org/wiki/Supercomputer
+https://en.wikipedia.org/wiki/Java_bytecode
+https://en.wikipedia.org/wiki/Machine_code
+https://en.wikipedia.org/wiki/Virtual_machine
+https://en.wikipedia.org/wiki/End_user
+https://en.wikipedia.org/wiki/Java_virtual_machine
+https://en.wikipedia.org/wiki/Applet
+https://en.wikipedia.org/wiki/Thread_(computing)
+https://en.wikipedia.org/wiki/Computer_network
+https://en.wikipedia.org/wiki/Executable
+https://en.wikipedia.org/wiki/Just-in-time_compilation
+https://en.wikipedia.org/wiki/Java_virtual_machine
+https://en.wikipedia.org/wiki/Java_bytecode
+https://en.wikipedia.org/wiki/Oracle_Corporation
+https://en.wikipedia.org/wiki/Sun_Microsystems
+https://en.wikipedia.org/wiki/Microsoft_Windows
+https://en.wikipedia.org/wiki/OS_X
+https://en.wikipedia.org/wiki/Linux
+https://en.wikipedia.org/wiki/Solaris_(operating_system)
+https://en.wikipedia.org/wiki/Ecma_International
+https://en.wikipedia.org/wiki/De_facto_standard
+https://en.wikipedia.org/wiki/Java_Development_Kit
+https://en.wikipedia.org/wiki/Java_compiler
+https://en.wikipedia.org/wiki/Javadoc
+https://en.wikipedia.org/wiki/JAR_(file_format)
+https://en.wikipedia.org/wiki/Debugger
+https://en.wikipedia.org/wiki/OpenJDK
+https://en.wikipedia.org/wiki/Microsoft
+https://en.wikipedia.org/wiki/Java_remote_method_invocation
+https://en.wikipedia.org/wiki/Java_Native_Interface
+https://en.wikipedia.org/wiki/Microsoft_Windows
+https://en.wikipedia.org/wiki/Java_Platform,_Enterprise_Edition
+https://en.wikipedia.org/wiki/Just-in-time_compilation
+https://en.wikipedia.org/wiki/Java_version_history
+https://en.wikipedia.org/wiki/HotSpot
+https://en.wikipedia.org/wiki/ARM_architecture
+https://en.wikipedia.org/wiki/Jazelle
+https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)
+https://en.wikipedia.org/wiki/Object_lifetime
+https://en.wikipedia.org/wiki/Unreachable_memory
+https://en.wikipedia.org/wiki/Memory_leak
+https://en.wikipedia.org/wiki/Stack_(abstract_data_type)
+https://en.wikipedia.org/wiki/Memory_management#DYNAMIC
+https://en.wikipedia.org/wiki/Memory_leak
+https://en.wikipedia.org/wiki/Smart_pointer
+https://en.wikipedia.org/wiki/Pointer_(computer_programming)
+https://en.wikipedia.org/wiki/Primitive_data_type
+https://en.wikipedia.org/wiki/Stack-based_memory_allocation
+https://en.wikipedia.org/wiki/Escape_analysis
+https://en.wikipedia.org/wiki/Wikipedia:Citation_needed
+https://en.wikipedia.org/wiki/Concurrent_mark_sweep_collector
+https://en.wikipedia.org/wiki/C%2B%2B
+https://en.wikipedia.org/wiki/Boolean_data_type
+https://en.wikipedia.org/wiki/Operator_overloading
+https://en.wikipedia.org/wiki/Multiple_inheritance
+https://en.wikipedia.org/wiki/Interface_(Java)
+https://en.wikipedia.org/wiki/Anti-pattern
+https://en.wikipedia.org/wiki/Javadoc
+https://en.wikipedia.org/wiki/%22Hello,_world!%22_program
+https://en.wikipedia.org/wiki/Java_compiler
+https://en.wikipedia.org/wiki/Inner_class
+https://en.wikipedia.org/wiki/Class_(computer_programming)#Unnamed
+https://en.wikipedia.org/wiki/List_of_Java_keywords
+https://en.wikipedia.org/wiki/Method_(computer_programming)#Static_methods
+https://en.wikipedia.org/wiki/Enterprise_JavaBeans
+https://en.wikipedia.org/wiki/Array_data_type
+https://en.wikipedia.org/wiki/Variadic_function
+https://en.wikipedia.org/wiki/JAR_(file_format)
+https://en.wikipedia.org/wiki/Array_data_type
+https://en.wikipedia.org/wiki/Command-line_interface
+https://en.wikipedia.org/wiki/Standard_streams
+https://en.wikipedia.org/wiki/Java_compiler
+https://en.wikipedia.org/wiki/Source_code
+https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)#Subclasses_and_superclasses
+https://en.wikipedia.org/wiki/Object_lifetime
+https://en.wikipedia.org/wiki/Graphical_user_interface
+https://en.wikipedia.org/wiki/Event-driven_programming
+https://en.wikipedia.org/wiki/Method_overriding
+https://en.wikipedia.org/wiki/Java_annotation
+https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)#Subclasses_and_superclasses
+https://en.wikipedia.org/wiki/Pixel
+https://en.wikipedia.org/wiki/HTML
+https://en.wikipedia.org/wiki/HTML_element
+https://en.wikipedia.org/wiki/Event_dispatching_thread
+https://en.wikipedia.org/wiki/Java_Servlet
+https://en.wikipedia.org/wiki/Server-side
+https://en.wikipedia.org/wiki/HTML
+https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+https://en.wikipedia.org/wiki/Client_(computing)
+https://en.wikipedia.org/wiki/Interface_(Java)
+https://en.wikipedia.org/wiki/Server_(computing)
+https://en.wikipedia.org/wiki/Interface_(Java)
+https://en.wikipedia.org/wiki/Exception_handling
+https://en.wikipedia.org/wiki/MIME
+https://en.wikipedia.org/wiki/Server-side
+https://en.wikipedia.org/wiki/HTML
+https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
+https://en.wikipedia.org/wiki/Client_(computing)
+https://en.wikipedia.org/wiki/Delimiter
+https://en.wikipedia.org/wiki/Swing_(Java)
+https://en.wikipedia.org/wiki/Library_(computing)
+https://en.wikipedia.org/wiki/Pluggable_look_and_feel
+https://en.wikipedia.org/wiki/Microsoft_Windows
+https://en.wikipedia.org/wiki/GTK%2B
+https://en.wikipedia.org/wiki/Motif_(software)
+https://en.wikipedia.org/wiki/Apple_Inc.
+https://en.wikipedia.org/wiki/Aqua_(user_interface)
+https://en.wikipedia.org/wiki/OS_X
+https://en.wikipedia.org/wiki/Graphical_control_element
+https://en.wikipedia.org/wiki/Window_(computing)
+https://en.wikipedia.org/wiki/Title_bar
+https://en.wikipedia.org/wiki/Graphical_control_element
+https://en.wikipedia.org/wiki/Constructor_(object-oriented_programming)
+https://en.wikipedia.org/wiki/Object_(computer_science)
+https://en.wikipedia.org/wiki/Event_dispatching_thread
+https://en.wikipedia.org/wiki/Generic_programming
+https://en.wikipedia.org/wiki/Type_safety
+https://en.wikipedia.org/wiki/HotSpot
+https://en.wikipedia.org/wiki/Apache_Harmony
+https://en.wikipedia.org/wiki/Smartphone
+https://en.wikipedia.org/wiki/Tablet_computer
+https://en.wikipedia.org/wiki/Google
+https://en.wikipedia.org/wiki/Android_(operating_system)
+https://en.wikipedia.org/wiki/Open_source
+https://en.wikipedia.org/wiki/Mobile_operating_system
+https://en.wikipedia.org/wiki/Linux_kernel
+https://en.wikipedia.org/wiki/Android_software_development#SDK
+https://en.wikipedia.org/wiki/Dalvik_(software)
+https://en.wikipedia.org/wiki/Android_Runtime
+https://en.wikipedia.org/wiki/William_Haskell_Alsup
+https://en.wikipedia.org/wiki/Java_Class_Library
+https://en.wikipedia.org/wiki/Standard_library
+https://en.wikipedia.org/wiki/Sun_Microsystems
+https://en.wikipedia.org/wiki/Java_Community_Process
+https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Dates_and_numbers#Chronological_items
+https://en.wikipedia.org/wiki/Sun_Microsystems
+https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Words_to_watch#Unsupported_attributions
+https://en.wikipedia.org/wiki/Application_programming_interface
+https://en.wikipedia.org/wiki/Class_(computer_programming)
+https://en.wikipedia.org/wiki/Java_package
+https://en.wikipedia.org/wiki/Interface_(Java)
+https://en.wikipedia.org/wiki/Exception_handling
+https://en.wikipedia.org/wiki/Wikipedia:TOPIC
+https://en.wikipedia.org/wiki/Talk:Java_(programming_language)#Relevant
+https://en.wikipedia.org/wiki/PersonalJava
+Indexing https://en.wikipedia.org/wiki/Programming_language
+https://en.wikipedia.org/wiki/Formal_language
+https://en.wikipedia.org/wiki/Constructed_language
+https://en.wikipedia.org/wiki/Machine_instruction
+https://en.wikipedia.org/wiki/Machine
+https://en.wikipedia.org/wiki/Computer
+https://en.wikipedia.org/wiki/Program_(machine)
+https://en.wikipedia.org/wiki/Algorithm
+https://en.wikipedia.org/wiki/History_of_computing_hardware
+https://en.wikipedia.org/wiki/Jacquard_loom
+https://en.wikipedia.org/wiki/Player_piano
+https://en.wikipedia.org/wiki/Imperative_programming
+https://en.wikipedia.org/wiki/Declarative_programming
+https://en.wikipedia.org/wiki/Syntax_(programming_languages)
+https://en.wikipedia.org/wiki/Semantics
+https://en.wikipedia.org/wiki/C_(programming_language)
+https://en.wikipedia.org/wiki/International_Organization_for_Standardization
+https://en.wikipedia.org/wiki/Perl
+https://en.wikipedia.org/wiki/Programming_language_implementation
+https://en.wikipedia.org/wiki/Reference_implementation
+https://en.wikipedia.org/wiki/Computer_program
+https://en.wikipedia.org/wiki/Algorithm
+https://en.wikipedia.org/wiki/Markup_languages
+https://en.wikipedia.org/wiki/XML
+https://en.wikipedia.org/wiki/HTML
+https://en.wikipedia.org/wiki/Troff
+https://en.wikipedia.org/wiki/Structured_data
+https://en.wikipedia.org/wiki/XSLT
+https://en.wikipedia.org/wiki/Turing_completeness
+https://en.wikipedia.org/wiki/LaTeX
+https://en.wikipedia.org/wiki/John_C._Reynolds
+https://en.wikipedia.org/wiki/Formal_specification
+https://en.wikipedia.org/wiki/Machine_language
+https://en.wikipedia.org/wiki/Punched_card
+https://en.wikipedia.org/wiki/Magnetic_tape_data_storage
+https://en.wikipedia.org/wiki/Front_panel
+https://en.wikipedia.org/wiki/First-generation_programming_language
+https://en.wikipedia.org/wiki/Second-generation_programming_language
+https://en.wikipedia.org/wiki/Assembly_language
+https://en.wikipedia.org/wiki/Instruction_set_architecture
+https://en.wikipedia.org/wiki/High-level_programming_language
+https://en.wikipedia.org/wiki/Plankalk%C3%BCl
+https://en.wikipedia.org/wiki/Z3_(computer)
+https://en.wikipedia.org/wiki/Konrad_Zuse
+https://en.wikipedia.org/wiki/John_Mauchly
+https://en.wikipedia.org/wiki/Short_Code_(computer_language)
+https://en.wikipedia.org/wiki/Electronic_computer
+https://en.wikipedia.org/wiki/Machine_code
+https://en.wikipedia.org/wiki/Machine_code
+https://en.wikipedia.org/wiki/Machine_code
+https://en.wikipedia.org/wiki/University_of_Manchester
+https://en.wikipedia.org/wiki/Alick_Glennie
+https://en.wikipedia.org/wiki/Autocode
+https://en.wikipedia.org/wiki/High-level_programming_language
+https://en.wikipedia.org/wiki/Compiler
+https://en.wikipedia.org/wiki/Manchester_Mark_1
+https://en.wikipedia.org/wiki/Compiler
+https://en.wikipedia.org/wiki/Tony_Brooker
+https://en.wikipedia.org/wiki/Ferranti_Mercury
+https://en.wikipedia.org/wiki/EDSAC
+https://en.wikipedia.org/wiki/David_Hartley_(computer_scientist)
+https://en.wikipedia.org/wiki/University_of_Cambridge_Mathematical_Laboratory
+https://en.wikipedia.org/wiki/Atlas_Autocode
+https://en.wikipedia.org/wiki/Atlas_Computer_(Manchester)
+https://en.wikipedia.org/wiki/FORTRAN
+https://en.wikipedia.org/wiki/John_Backus
+https://en.wikipedia.org/wiki/High-level_language
+https://en.wikipedia.org/wiki/High-performance_computing
+https://en.wikipedia.org/wiki/TOP500
+https://en.wikipedia.org/wiki/Grace_Hopper
+https://en.wikipedia.org/wiki/FLOW-MATIC
+https://en.wikipedia.org/wiki/UNIVAC_I
+https://en.wikipedia.org/wiki/Remington_Rand
+https://en.wikipedia.org/wiki/English_language
+https://en.wikipedia.org/wiki/COBOL
+https://en.wikipedia.org/wiki/AIMACO
+https://en.wikipedia.org/wiki/Low-level_programming_language
+https://en.wikipedia.org/wiki/System_programming_language
+https://en.wikipedia.org/wiki/Structured_programming
+https://en.wikipedia.org/wiki/Edsger_W._Dijkstra
+https://en.wikipedia.org/wiki/Communications_of_the_ACM
+https://en.wikipedia.org/wiki/Goto
+https://en.wikipedia.org/wiki/C%2B%2B
+https://en.wikipedia.org/wiki/Ada_(programming_language)
+https://en.wikipedia.org/wiki/Pascal_(programming_language)
+https://en.wikipedia.org/wiki/Fifth-generation_programming_language
+https://en.wikipedia.org/wiki/ML_(programming_language)
+https://en.wikipedia.org/wiki/Modula-2
+https://en.wikipedia.org/wiki/Generic_programming
+https://en.wikipedia.org/wiki/Internet
+https://en.wikipedia.org/wiki/Perl
+https://en.wikipedia.org/wiki/Website
+https://en.wikipedia.org/wiki/Java_(programming_language)
+https://en.wikipedia.org/wiki/Write_once,_run_anywhere
+https://en.wikipedia.org/wiki/UCSD_Pascal
+https://en.wikipedia.org/wiki/Mixin
+https://en.wikipedia.org/wiki/Delegation_(programming)
+https://en.wikipedia.org/wiki/Aspect-oriented_programming
+https://en.wikipedia.org/wiki/Language_Integrated_Query
+https://en.wikipedia.org/wiki/Fourth-generation_programming_language
+https://en.wikipedia.org/wiki/Fifth_generation_programming_language
+https://en.wikipedia.org/wiki/Algorithm
+https://en.wikipedia.org/wiki/Language_primitive
+https://en.wikipedia.org/wiki/Syntax_(programming_languages)
+https://en.wikipedia.org/wiki/Visual_programming_language
+https://en.wikipedia.org/wiki/Formal_semantics_of_programming_languages
+https://en.wikipedia.org/wiki/Reference_implementation_(computing)
+https://en.wikipedia.org/wiki/Regular_expression
+https://en.wikipedia.org/wiki/Lexical_analysis
+https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_Form
+https://en.wikipedia.org/wiki/Context-free_grammar
+https://en.wikipedia.org/wiki/Lisp_(programming_language)
+https://en.wikipedia.org/wiki/Undefined_behavior
+https://en.wikipedia.org/wiki/Natural_language
+https://en.wikipedia.org/wiki/Pointer_(computer_programming)
+https://en.wikipedia.org/wiki/Type_declaration
+https://en.wikipedia.org/wiki/Chomsky_hierarchy
+https://en.wikipedia.org/wiki/Context-free_grammar
+https://en.wikipedia.org/wiki/Undecidable_problem
+https://en.wikipedia.org/wiki/Lisp_macro
+https://en.wikipedia.org/wiki/Semantics#Computer_science
+https://en.wikipedia.org/wiki/Identifier
+https://en.wikipedia.org/wiki/Case_statement
+https://en.wikipedia.org/wiki/Subroutine
+https://en.wikipedia.org/wiki/Logic
+https://en.wikipedia.org/wiki/Type_system
+https://en.wikipedia.org/wiki/Static_code_analysis
+https://en.wikipedia.org/wiki/Data_flow_analysis
+https://en.wikipedia.org/wiki/Java_(programming_language)
+https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
+https://en.wikipedia.org/wiki/Definite_assignment_analysis
+https://en.wikipedia.org/wiki/Evaluation_strategy
+https://en.wikipedia.org/wiki/Control_flow
+https://en.wikipedia.org/wiki/Statement_(computer_science)
+https://en.wikipedia.org/wiki/Formal_semantics_of_programming_languages
+https://en.wikipedia.org/wiki/Decidability_(logic)
+https://en.wikipedia.org/wiki/Type_conversion#Explicit_type_conversion
+https://en.wikipedia.org/wiki/Type_checking
+https://en.wikipedia.org/wiki/Type_inference
+https://en.wikipedia.org/wiki/Type_theory
+https://en.wikipedia.org/wiki/String_literal
+https://en.wikipedia.org/wiki/Exception_handling
+https://en.wikipedia.org/wiki/REXX
+https://en.wikipedia.org/wiki/Standard_Generalized_Markup_Language
+https://en.wikipedia.org/wiki/Assembly_language
+https://en.wikipedia.org/wiki/BCPL
+https://en.wikipedia.org/wiki/Tcl
+https://en.wikipedia.org/wiki/Forth_(programming_language)
+https://en.wikipedia.org/wiki/Type_theory
+https://en.wikipedia.org/wiki/Type_conversion#Explicit_type_conversion
+https://en.wikipedia.org/wiki/Type_system
+https://en.wikipedia.org/wiki/Manifest_typing
+https://en.wikipedia.org/wiki/Type_inference
+https://en.wikipedia.org/wiki/Declaration_(computer_science)
+https://en.wikipedia.org/wiki/C%2B%2B
+https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
+https://en.wikipedia.org/wiki/Java_(programming_language)
+https://en.wikipedia.org/wiki/Haskell_(programming_language)
+https://en.wikipedia.org/wiki/ML_(programming_language)
+https://en.wikipedia.org/wiki/Java_(programming_language)
+https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
+https://en.wikipedia.org/wiki/Type_system
+https://en.wikipedia.org/wiki/Software_bug
+https://en.wikipedia.org/wiki/Debugging
+https://en.wikipedia.org/wiki/Lisp_(programming_language)
+https://en.wikipedia.org/wiki/Smalltalk
+https://en.wikipedia.org/wiki/Perl
+https://en.wikipedia.org/wiki/Python_(programming_language)
+https://en.wikipedia.org/wiki/JavaScript
+https://en.wikipedia.org/wiki/Ruby_(programming_language)
+https://en.wikipedia.org/wiki/Weak_typing
+https://en.wikipedia.org/wiki/String_(computer_science)
+https://en.wikipedia.org/wiki/Compile_time
+https://en.wikipedia.org/wiki/Run_time_(program_lifecycle_phase)
+https://en.wikipedia.org/wiki/Strongly_typed_programming_language
+https://en.wikipedia.org/wiki/Type_safety
+https://en.wikipedia.org/wiki/Perl
+https://en.wikipedia.org/wiki/JavaScript
+https://en.wikipedia.org/wiki/C_(programming_language)
+https://en.wikipedia.org/wiki/Library_(computing)
+https://en.wikipedia.org/wiki/Java_(programming_language)
+https://en.wikipedia.org/wiki/Smalltalk
+https://en.wikipedia.org/wiki/Anonymous_function
+https://en.wikipedia.org/wiki/Scheme_(programming_language)
+https://en.wikipedia.org/wiki/Constructed_languages
+https://en.wikipedia.org/wiki/Abstraction_(computer_science)
+https://en.wikipedia.org/wiki/Natural_language_programming
+https://en.wikipedia.org/wiki/Edsger_W._Dijkstra
+https://en.wikipedia.org/wiki/Natural_language_programming
+https://en.wikipedia.org/wiki/Alan_Perlis
+https://en.wikipedia.org/wiki/Structured_English
+https://en.wikipedia.org/wiki/SQL
+https://en.wikipedia.org/wiki/Programmer
+https://en.wikipedia.org/wiki/Programming_language_implementation
+https://en.wikipedia.org/wiki/Source_code
+https://en.wikipedia.org/wiki/Computer_program
+https://en.wikipedia.org/wiki/Compiler
+https://en.wikipedia.org/wiki/Interpreter_(computing)
+https://en.wikipedia.org/wiki/Compiler
+https://en.wikipedia.org/wiki/BASIC
+https://en.wikipedia.org/wiki/Wikipedia:Citation_needed
+https://en.wikipedia.org/wiki/Just-in-time_compilation
+https://en.wikipedia.org/wiki/Virtual_machine
+https://en.wikipedia.org/wiki/Bytecode
+https://en.wikipedia.org/wiki/Domain_specific_language
+https://en.wikipedia.org/wiki/Scripting_language
+https://en.wikipedia.org/wiki/Oracle_Corporation
+https://en.wikipedia.org/wiki/Java_programming_language
+https://en.wikipedia.org/wiki/Microsoft
+https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
+https://en.wikipedia.org/wiki/Common_Language_Runtime
+https://en.wikipedia.org/wiki/MATLAB
+https://en.wikipedia.org/wiki/VBScript
+https://en.wikipedia.org/wiki/Erlang_(programming_language)
+https://en.wikipedia.org/wiki/Pseudocode
+https://en.wikipedia.org/wiki/Programmer
+https://en.wikipedia.org/wiki/Abstraction_(computer_science)
+https://en.wikipedia.org/wiki/Language_primitive
+https://en.wikipedia.org/wiki/Computer_Programming
+https://en.wikipedia.org/wiki/Execution_(computing)
+https://en.wikipedia.org/wiki/Batch_processing
+https://en.wikipedia.org/wiki/Command_(computing)
+https://en.wikipedia.org/wiki/Session_(computer_science)
+https://en.wikipedia.org/wiki/Interpreter_(computing)
+https://en.wikipedia.org/wiki/Unix_shell
+https://en.wikipedia.org/wiki/Command-line_interface
+https://en.wikipedia.org/wiki/Scripting_language
+https://en.wikipedia.org/wiki/COBOL
+https://en.wikipedia.org/wiki/Mainframe_computer
+https://en.wikipedia.org/wiki/Fortran
+https://en.wikipedia.org/wiki/Ada_(programming_language)
+https://en.wikipedia.org/wiki/C_(programming_language)
+https://en.wikipedia.org/wiki/C_(programming_language)
+https://en.wikipedia.org/wiki/Java_(programming_language)
+https://en.wikipedia.org/wiki/PHP
+https://en.wikipedia.org/wiki/JavaScript
+https://en.wikipedia.org/wiki/C%2B%2B
+https://en.wikipedia.org/wiki/Python_(programming_language)
+https://en.wikipedia.org/wiki/Shell_script
+https://en.wikipedia.org/wiki/Ruby_(programming_language)
+https://en.wikipedia.org/wiki/Objective-C
+https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
+https://en.wikipedia.org/wiki/Thread_(computer_science)
+https://en.wikipedia.org/wiki/Python_(programming_language)
+https://en.wikipedia.org/wiki/Scripting_language
+https://en.wikipedia.org/wiki/Programming_paradigm
+https://en.wikipedia.org/wiki/General-purpose_programming_language
+https://en.wikipedia.org/wiki/Domain-specific_programming_language
+https://en.wikipedia.org/wiki/Imperative_programming
+https://en.wikipedia.org/wiki/Declarative_programming
+https://en.wikipedia.org/wiki/Procedural_programming
+https://en.wikipedia.org/wiki/Object-oriented_programming
+https://en.wikipedia.org/wiki/Functional_programming
+https://en.wikipedia.org/wiki/Logic_programming
+https://en.wikipedia.org/wiki/Assembly_language
+https://en.wikipedia.org/wiki/System_programming_language
+https://en.wikipedia.org/wiki/English_language
+https://en.wikipedia.org/wiki/Non-English-based_programming_languages
+https://en.wikipedia.org/wiki/Esoteric_programming_language
+Indexing https://en.wikipedia.org/wiki/Concurrent_computing
+https://en.wikipedia.org/wiki/Computing
+https://en.wikipedia.org/wiki/Computation
+https://en.wikipedia.org/wiki/Concurrency_(computer_science)
+https://en.wikipedia.org/wiki/Computer_program
+https://en.wikipedia.org/wiki/Computer
+https://en.wikipedia.org/wiki/Computer_network
+https://en.wikipedia.org/wiki/Programming_paradigm
+https://en.wikipedia.org/wiki/Modular_programming
+https://en.wikipedia.org/wiki/Decomposition_(computer_science)
+https://en.wikipedia.org/wiki/Edsger_Dijkstra
+https://en.wikipedia.org/wiki/Per_Brinch_Hansen
+https://en.wikipedia.org/wiki/C.A.R._Hoare
+https://en.wikipedia.org/wiki/Parallel_computing
+https://en.wikipedia.org/wiki/Central_processing_unit
+https://en.wikipedia.org/wiki/Multi-processor
+https://en.wikipedia.org/wiki/Multi-core_processor
+https://en.wikipedia.org/wiki/Time-sharing
+https://en.wikipedia.org/wiki/Distributed_computing
+https://en.wikipedia.org/wiki/Schedule_(computer_science)
+https://en.wikipedia.org/wiki/Serializability
+https://en.wikipedia.org/wiki/Concurrency_control
+https://en.wikipedia.org/wiki/Concurrency_control
+https://en.wikipedia.org/wiki/Race_condition#Software
+https://en.wikipedia.org/wiki/Deadlock
+https://en.wikipedia.org/wiki/Resource_starvation
+https://en.wikipedia.org/wiki/Concurrency_control
+https://en.wikipedia.org/wiki/Non-blocking_algorithm
+https://en.wikipedia.org/wiki/Metastability_in_electronics
+https://en.wikipedia.org/wiki/Deadlock
+https://en.wikipedia.org/wiki/Process_(computer_science)
+https://en.wikipedia.org/wiki/Thread_(computer_science)
+https://en.wikipedia.org/wiki/Future_(programming)
+https://en.wikipedia.org/wiki/Telegraphy
+https://en.wikipedia.org/wiki/Time-division_multiplexing
+https://en.wikipedia.org/wiki/Mutual_exclusion
+https://en.wikipedia.org/wiki/Programming_languages
+https://en.wikipedia.org/wiki/Concurrency_(computer_science)
+https://en.wikipedia.org/wiki/Thread_(computer_science)
+https://en.wikipedia.org/wiki/Distributed_computing
+https://en.wikipedia.org/wiki/Message_passing_programming
+https://en.wikipedia.org/wiki/Sharing
+https://en.wikipedia.org/wiki/Parallel_Random_Access_Machine
+https://en.wikipedia.org/wiki/Futures_and_promises
+https://en.wikipedia.org/wiki/Java_(programming_language)
+https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
+https://en.wikipedia.org/wiki/Monitor_(synchronization)
+https://en.wikipedia.org/wiki/Erlang_(programming_language)
+https://en.wikipedia.org/wiki/Wikipedia:Citation_needed
+https://en.wikipedia.org/wiki/Pict_(programming_language)
+https://en.wikipedia.org/wiki/Erlang_(programming_language)
+https://en.wikipedia.org/wiki/Limbo_(programming_language)
+https://en.wikipedia.org/wiki/Occam_(programming_language)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
